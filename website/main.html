@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> TECH2ETC online shoping </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/shim.min.js" integrity="sha512-nPnkC29R0sikt0ieZaAkk28Ib7Y1Dz7IqePgELH30NnSi1DzG4x+envJAOHz8ZSAveLXAHTR3ai2E9DZUsT8pQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class=""table">
+            <script>
+                let table=document.querySelector(".table");
+                (
+                    async()=>{
+                        let workbook=XLSX.read(await(await fetch("./excel.xlsx")).arrayBuffer());
+                        console.log(workbook);
+                    }
+                )
+            </script>
+        </div>
+        <section id="header">
+            <a href="#"><img width="90" height="40" src="logo.jpeg" class="logo" alt=""</a>
+            <div>
+                <ul id="navbar">
+                    <li> <a class="active" href="index.html">Home</a></li>
+                    <li> <a href="shopping.html">shop</a></li>
+                    <li> <a href="blog.html">blog</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                    <li> <a href=""><i class="fa fa-basket-shopping"></i></a></li> 
+            </div>
+        </section>
+        <section id="hero">
+            <h4>Trade in offer</h4>
+            <h2>SUPER VALUE</h2>
+            <h1>ON ALL PRODUCTS</h1>
+            <p>Save money and energy and up to 70% off!!!</p>
+            <button>Shop now </button>
+
+        </section>
+        <section id="features" class="section-p1">
+            <div class="fe-box">
+                <img width="100" height="90" src="free.png" alt="">
+                <h6>free shipping</h6>
+            </div>
+            <div class="fe-box">
+                <img width="100" height="90" src="online.jpg" alt="">
+                <h6>Online Order</h6>
+            </div>
+            <div class="fe-box">
+                <img width="100" height="90" src="saving.jpg" alt="">
+                <h6>Saving Money</h6>
+            </div>
+            <div class="fe-box">
+                <img width="100" height="90" src="promotion.jpg" alt="">
+                <h6>Promotion</h6>
+            </div>
+            <div class="fe-box">
+                <img width="100" height="90" src="happy.jpg" alt="">
+                <h6>Happy Sell</h6>
+            </div>
+            <div class="fe-box">
+                <img width="100" height="90" src="support.jpg" alt="">
+                <h6>24/7 Support</h6>
+            </div>
+
+        </section>
+        <section id="product1" class="section-p1">
+            <h2>Feature product</h2>
+            <p>summer dress</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="adidas.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>cartoo astronuat t shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-basket-shopping cart"></i></a>
+
+                </div>
+              
+            </div>
+
+        </section>
+        
+        <script src="script.js"> </script>
+    </body>
+</html>
+//#navbar li a:hover{
+    //   color:blueviolet;
+   //}
